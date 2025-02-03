@@ -55,6 +55,12 @@ CUDA_VISIBLE_DEVICES=0,1,2,3 python -m torch.distributed.run --nproc_per_node=4 
 
 The log and model files will be in `./log` and `./weight`, respectively.
 
+## Results
+
+![res1](figs/res1.png)
+
+![res2](figs/res2.png)
+
 ## Citation
 
 If you find the code helpful in your research or work, please cite the following paper:
