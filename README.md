@@ -37,6 +37,8 @@ scikit-image==0.24.0
 
 ## Test
 
+Download the pretrained models ([Google Drive](https://drive.google.com/file/d/1UzUg0lFqwWfmeXi8gqAOeQA3yt4HpPNy/view?usp=sharing), [PKU Disk 北大网盘](https://disk.pku.edu.cn/link/AA0B0294E9BCF64185B677BDF0951A7D54)) and put the `weight` directory into `./`, then run the following command:
+
 ```shell
 python test.py --max_ratio=0.1/0.3/0.5 --testset_name=Set11/CBSD68/Urban100/DIV2K
 ```
@@ -45,10 +47,10 @@ The reconstructed images will be in `./result`.
 
 ## Train
 
-Download `Training_Data.mat` from [Google Drive](https://drive.google.com/file/d/14CKidNsC795vPfxFDXa1FH9QuNJKE3cp) or [PKU NetDisk (北大网盘)](https://disk.pku.edu.cn/anyshare/link/AA2856882B7621432B826D00CE1C0E2E5B) and put it into `./data`, then run:
+Download the dataset of [Waterloo Exploration Database](https://kedema.org/project/exploration/index.html) ([Google Drive](https://drive.google.com/file/d/1TOg7BZE1XsJ7l2VzMoqFRAETk7OLcv75/view?usp=drive_link), [PKU Disk 北大网盘](https://disk.pku.edu.cn/link/AAD0DCBBD65D744526921B334ED2AB4F76)) and put the `pristine_images` directory (containing 4744 `.bmp` image files) into `./data`, then run the following command:
 
 ```shell
-python train.py --max_ratio=0.1/0.3/0.5
+CUDA_VISIBLE_DEVICES=0,1,2,3 python -m torch.distributed.run --nproc_per_node=4 --master_port=23333 train.py --cs_ratio=0.1/0.3/0.5
 ```
 
 The log and model files will be in `./log` and `./weight`, respectively.
@@ -58,12 +60,10 @@ The log and model files will be in `./log` and `./weight`, respectively.
 If you find the code helpful in your research or work, please cite the following paper:
 
 ```latex
-@article{chen2024self,
-  title={Self-supervised Scalable Deep Compressed Sensing},
-  author={Chen, Bin and Zhang, Xuanyu and Liu, Shuai and Zhang, Yongbing and Zhang, Jian},
-  journal={International Journal of Computer Vision},
-  pages={1--36},
-  year={2024},
-  publisher={Springer}
+@article{chen2025invertible,
+  title={Invertible Diffusion Models for Compressed Sensing},
+  author={Chen, Bin and Zhang, Zhenyu and Li, Weiqi and Zhao, Chen and Yu, Jiwen and Zhao, Shijie and Chen, Jie and Zhang, Jian},
+  journal={IEEE Transactions on Pattern Analysis and Machine Intelligence},
+  year={2025},
 }
 ```
