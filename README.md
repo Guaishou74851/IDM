@@ -69,7 +69,7 @@ If you find the code helpful in your research or work, please cite the following
 @article{chen2025invertible,
   title={Invertible Diffusion Models for Compressed Sensing},
   author={Chen, Bin and Zhang, Zhenyu and Li, Weiqi and Zhao, Chen and Yu, Jiwen and Zhao, Shijie and Chen, Jie and Zhang, Jian},
-  journal={IEEE Transactions on Pattern Analysis and Machine Intelligence},
+  journal={IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI)},
   year={2025},
 }
 ```
