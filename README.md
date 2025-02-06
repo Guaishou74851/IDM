@@ -40,7 +40,7 @@ scikit-image==0.24.0
 Download the pretrained models ([Google Drive](https://drive.google.com/file/d/1UzUg0lFqwWfmeXi8gqAOeQA3yt4HpPNy/view?usp=sharing), [PKU Disk 北大网盘](https://disk.pku.edu.cn/link/AA0B0294E9BCF64185B677BDF0951A7D54)) and put the `weight` directory into `./`, then run the following command:
 
 ```shell
-python test.py --max_ratio=0.1/0.3/0.5 --testset_name=Set11/CBSD68/Urban100/DIV2K
+python test.py --cs_ratio=0.1/0.3/0.5 --testset_name=Set11/CBSD68/Urban100/DIV2K
 ```
 
 The reconstructed images will be in `./result`.
@@ -69,7 +69,7 @@ If you find the code helpful in your research or work, please cite the following
 @article{chen2025invertible,
   title={Invertible Diffusion Models for Compressed Sensing},
   author={Chen, Bin and Zhang, Zhenyu and Li, Weiqi and Zhao, Chen and Yu, Jiwen and Zhao, Shijie and Chen, Jie and Zhang, Jian},
-  journal={IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI)},
+  journal={IEEE Transactions on Pattern Analysis and Machine Intelligence},
   year={2025},
 }
 ```
