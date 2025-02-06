@@ -1,6 +1,6 @@
 # (TPAMI 2025) Invertible Diffusion Models for Compressed Sensing [PyTorch]
 
-[![IEEE-Xplore](https://img.shields.io/badge/IEEE_Xplore-Paper-<COLOR>.svg)](https://github.com/Guaishou74851/IDM) [![icon](https://img.shields.io/badge/ArXiv-Paper-<COLOR>.svg)](https://arxiv.org/abs/2403.17006) ![visitors](https://visitor-badge.laobi.icu/badge?page_id=Guaishou74851.IDM)
+[![IEEE-Xplore](https://img.shields.io/badge/IEEE_Xplore-Paper-<COLOR>.svg)](https://ieeexplore.ieee.org/document/10874182) [![icon](https://img.shields.io/badge/ArXiv-Paper-<COLOR>.svg)](https://arxiv.org/abs/2403.17006) ![visitors](https://visitor-badge.laobi.icu/badge?page_id=Guaishou74851.IDM)
 
 [Bin Chen](https://scholar.google.com/citations?user=aZDNm98AAAAJ), [Zhenyu Zhang](https://scholar.google.com/citations?user=4TbicrcAAAAJ), [Weiqi Li](https://scholar.google.com/citations?user=SIkQdEsAAAAJ), [Chen Zhao](https://chenzhao.netlify.app/)†, [Jiwen Yu](https://vvictoryuki.github.io/website/), Shijie Zhao, [Jie Chen](https://aimia-pku.github.io/), and [Jian Zhang](https://jianzhang.tech/)
 
