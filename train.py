@@ -114,7 +114,7 @@ def test():
             A = lambda z: (z.reshape(-1,)[perm].reshape(-1,N) @ Phi)
             AT = lambda z: (z @ Phi.t()).reshape(-1,)[perm_inv].reshape(1,1,new_h,new_w)
             y = A(x)
-            x_out = model(y, A, AT, use_amp_=False)[:old_h, :old_w]
+            x_out = model(y, A, AT, use_amp_=False)[..., :old_h, :old_w]
             x_out = (x_out.clamp(min=0.0, max=1.0) * 255.0).cpu().numpy().squeeze()
             PSNR = psnr(x_out, img)
             SSIM = ssim(x_out, img, data_range=255)
