@@ -45,6 +45,8 @@ python test.py --cs_ratio=0.1/0.3/0.5 --testset_name=Set11/CBSD68/Urban100/DIV2K
 
 The reconstructed images will be in `./result`.
 
+The test sets CBSD68, Urban100, and DIV2K are available at https://github.com/Guaishou74851/SCNet/tree/main/data.
+
 ## Train
 
 Download the dataset of [Waterloo Exploration Database](https://kedema.org/project/exploration/index.html) ([Google Drive](https://drive.google.com/file/d/1TOg7BZE1XsJ7l2VzMoqFRAETk7OLcv75/view?usp=drive_link), [PKU Disk 北大网盘](https://disk.pku.edu.cn/link/AAD0DCBBD65D744526921B334ED2AB4F76)) and put the `pristine_images` directory (containing 4744 `.bmp` image files) into `./data`, then run the following command:
