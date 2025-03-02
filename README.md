@@ -47,6 +47,8 @@ The reconstructed images will be in `./result`.
 
 The test sets CBSD68, Urban100, and DIV2K are available at https://github.com/Guaishou74851/SCNet/tree/main/data.
 
+For easy comparison, test results of various existing image CS methods are available on [Google Drive](https://drive.google.com/drive/folders/1Lif_7N_bCyILFLac5JcOtJ9cWpGBNVCd) and [PKU Disk](https://disk.pku.edu.cn/link/AA1C2D8A08050744449CBFCAB51A846B2D).
+
 ## Train
 
 Download the dataset of [Waterloo Exploration Database](https://kedema.org/project/exploration/index.html) ([Google Drive](https://drive.google.com/file/d/1TOg7BZE1XsJ7l2VzMoqFRAETk7OLcv75/view?usp=drive_link), [PKU Disk 北大网盘](https://disk.pku.edu.cn/link/AAD0DCBBD65D744526921B334ED2AB4F76)) and put the `pristine_images` directory (containing 4744 `.bmp` image files) into `./data`, then run the following command:
